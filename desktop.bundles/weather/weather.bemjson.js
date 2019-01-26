@@ -1,31 +1,44 @@
 ({
 	block: 'page',
 	title: 'Weather',
+	favicon: '/assets/favicon.ico',
 	head: [
 		{ elem: 'css', url: 'weather.min.css' }
 	],
 	scripts: [{ elem: 'js', url: 'weather.min.js' }],
-	mods: { theme: 'islands' },
+	mods: { theme: 'original' },
 	content: [
 		{
-			block: 'hello',
+			block: 'weather-container',
 			content: [
 				{
-					elem: 'greeting',
-					content: 'Hello %user%!'
-				},
-				{
-					block: 'input',
-					mods: { theme: 'islands', size: 'm' },
-					// подмешиваем элемент для добавления CSS-правил
-					mix: { block: 'hello', elem: 'input' },
-					name: 'name',
-					placeholder: 'User name'
-				},
-				{
-					block: 'button',
-					mods: { theme: 'islands', size: 'm', type: 'submit' },
-					text: 'Click'
+					block: 'weather-card',
+					content: [
+						{
+							elem: 'day-of-the-week',
+							tag: 'p'
+						},
+						{
+							elem: 'day-of-the-month',
+							tag: 'p'
+						},
+						{
+							elem: 'icon',
+							tag: 'img'
+						},
+						{
+							elem: 'day-temperature',
+							tag: 'p'
+						},
+						{
+							elem: 'night-temperature',
+							tag: 'p'
+						},
+						{
+							elem: 'rainfall',
+							tag: 'p'
+						}
+					]
 				}
 			]
 		}

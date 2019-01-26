@@ -97,10 +97,10 @@ gulp.task('build', () => {
                 return gulp.src(bundle.dirname + '/*.bemjson.js')
                     .pipe(bemhtmlApply());
             }
-       }))
-       .on('error', console.error)
-       .pipe(debug())
-       .pipe(gulp.dest(file => path.dirname(file.path)));
+        }))
+        .on('error', console.error)
+        .pipe(debug())
+        .pipe(gulp.dest(file => path.dirname(file.path)));
 });
 
 gulp.task('default', gulp.series('build'));
