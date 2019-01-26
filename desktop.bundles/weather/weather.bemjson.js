@@ -1,7 +1,7 @@
 ({
 	block: 'page',
 	title: 'Weather',
-	favicon: '/assets/favicon.ico',
+	favicon: '/assets/img/favicon.ico',
 	head: [
 		{ elem: 'css', url: 'weather.min.css' }
 	],

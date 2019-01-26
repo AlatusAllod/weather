@@ -1,11 +1,11 @@
 [
 	{
-		"date": 15383376000000,
+		"date": 1548532800000,
 		"temperature": {
 			"night": -3,
 			"day": 2
 		},
-		"cloudiness": "Ясно",
+		"cloudiness": "sunny",
 		"snow": false,
 		"rain": false
 	}
