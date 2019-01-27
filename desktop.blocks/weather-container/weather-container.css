@@ -11,9 +11,9 @@
 .weather-container__navigation::after {
 	content: '';
 	position: absolute;
-	border: 50px solid transparent;
-	border-left: 20px solid transparent;
-	border-right: 20px solid #343434;
+	border: 30px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid #343434;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -21,6 +21,11 @@
 	width: 0;
 	height: 0;
 	margin: auto;
+	transition-duration: 0.5s;
+}
+
+.weather-container__navigation:hover::after {
+	transform: scale(1.2);
 }
 
 .weather-container__navigation_scroll_forward::after {
