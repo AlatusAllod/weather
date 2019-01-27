@@ -8,5 +8,25 @@
 		"cloudiness": "sunny",
 		"snow": false,
 		"rain": false
+	},
+	{
+		"date": 1548619200000,
+		"temperature": {
+			"night": 0,
+			"day": 3
+		},
+		"cloudiness": "cloudy",
+		"snow": false,
+		"rain": true
+	},
+	{
+		"date": 1548705600000,
+		"temperature": {
+			"night": -5,
+			"day": -3
+		},
+		"cloudiness": "cloudy",
+		"snow": true,
+		"rain": true
 	}
 ]
