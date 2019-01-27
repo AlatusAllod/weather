@@ -1,3 +1,38 @@
 .weather-container {
 	display: flex;
 }
+
+.weather-container__navigation {
+	width: 50px;
+	cursor: pointer;
+	position: relative;
+}
+
+.weather-container__navigation::after {
+	content: '';
+	position: absolute;
+	border: 50px solid transparent;
+	border-left: 20px solid transparent;
+	border-right: 20px solid #343434;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	margin: auto;
+}
+
+.weather-container__navigation_scroll_forward::after {
+	border-left-color: #343434;
+	border-right-color: transparent;
+}
+
+.weather-container__navigation_disabled {
+	pointer-events: none;
+	cursor: auto;
+}
+
+.weather-container__navigation_disabled::after {
+	opacity: 0.3;
+}
