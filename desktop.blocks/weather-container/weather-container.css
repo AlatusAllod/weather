@@ -1,9 +1,13 @@
 .weather-container {
 	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
 }
 
 .weather-container__navigation {
-	width: 50px;
+	min-width: 40px;
 	cursor: pointer;
 	position: relative;
 }

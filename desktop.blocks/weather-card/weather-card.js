@@ -36,7 +36,7 @@ window.onload = function () {
 
 function mapDataToDOM() {
 	// Подставляем данные в DOM узлы
-	for (let i = 0; i < 4; i++) {
+	for (let i = 0; i < weatherCards.length; i++) {
 		// День недели
 		let date = new Date(response[i + currentDay].date);
 		if (!(i + currentDay)) {
